@@ -14,28 +14,10 @@ title: "离线验证器"
 
 ```csharp
 public OfflineAuthentication(string username)
-{
-    AccessToken = Guid.NewGuid().ToString("N");
-    ClientToken = Guid.NewGuid().ToString("N");
-    Name = username;
-    Uuid = Guid.NewGuid().ToString();
-}
-        
+ 
 public OfflineAuthentication(string username, string uuid)
-{
-    AccessToken = Guid.NewGuid().ToString("N");
-    ClientToken = Guid.NewGuid().ToString("N");
-    Name = username;
-    Uuid = uuid;
-}
-        
+     
 public OfflineAuthentication(string username, string uuid, string accessToken, string clientToken)
-{
-    AccessToken = accessToken;
-    ClientToken = clientToken;
-    Name = username;
-    Uuid = uuid;
-}
 ```
 
 | 参数          | 类型     | 描述      |
